@@ -1,0 +1,7 @@
+create table if not exists dm.dm_esy_wlwflow (
+`vno` string comment '智能卡号码',
+`month` string comment '月份',
+`flow` bigint comment '流量（单位/b）',
+`loadtime` string comment '入库时间',
+primary key (`vno`,`month`)
+) stored as kudu;
