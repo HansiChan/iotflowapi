@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="IOTFlowAPI" />
+        <module name="bigdata" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bigdata" target="8" />
       <module name="IOTFlowAPI" target="8" />
     </bytecodeTargetLevel>
   </component>

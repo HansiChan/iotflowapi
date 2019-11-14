@@ -1,4 +1,4 @@
-create table if not exists dm.dm_esy_wlwflow (
+create table if not exists dm.dm.dm_esy_iotflow (
 `vno` string comment '智能卡号码',
 `month` string comment '月份',
 `flow` bigint comment '流量（单位/b）',

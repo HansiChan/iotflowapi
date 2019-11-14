@@ -79,7 +79,7 @@ public class IOTFlowAPI {
                             Object mt = "'" + job.get("month") + "'";
                             Object flow = job.get("flow");
 
-                            String sql = String.format("upsert into dm.dm_esy_wlwflow values(%s,%s,%s,concat(cast(unix_timestamp() as string),'000'));", cardId, mt, flow);
+                            String sql = String.format("upsert into dm.dm_esy_iotflow values(%s,%s,%s,concat(cast(unix_timestamp() as string),'000'));", cardId, mt, flow);
                             ps = con.prepareStatement(sql);
                             ps.executeUpdate();
                         }
